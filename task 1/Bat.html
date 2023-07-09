@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"› 
+ <head>
+    <title>Mrf Bats</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+   
+    <body>
+   <section class="sec">
+    <header>
+    <h1>CricBats</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+         <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+           <li><a href="#">NewsLetter</a></li> 
+           <li><a href="#">Contact</a></li>
+    </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>To Build <br><span>better Tomorrow</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius reprehenderit, in autem repellendus voluptatum velit quia ut, nobis tempore delectus distinctio fuga natus quam. Quis fugiat ab labore voluptatem animi?</p>
+            <a href="#">Check Our Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="bat1.jpg" class="mrf">
+        </div>
+    </div>
+    <ul class="mrk">
+        <li><img src="mrfp.png" onclick="imgSlider('bat1.jpg');changeBgColor('#e60c2c')"></li>
+        <li><img src="gray.webp" onclick="imgSlider('kane.jpg');changeBgColor('#0062be')"></li>
+        <li><img src="gml.png" onclick="imgSlider('aiden.jpeg');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    
+  
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.mrf').src=anything;
+        }
+        function changeBgColor(color){
+            const sec=document.querySelector('.sec');
+            sec.style.background=color;
+        }
+    </script>
+    </body>
+    </html>
